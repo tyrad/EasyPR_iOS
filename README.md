@@ -17,7 +17,10 @@ EasyPR github项目地址:[https://github.com/liuruoze/EasyPR](https://github.co
 
 2). 添加`src`、`thirdparty`、`include`、`model`  (model为蓝色)
 
-![2017092752315cc2.png](http://oi6f4bkw5.bkt.clouddn.com/2017092752315cc2.png)
+<!--
+![http://oi6f4bkw5.bkt.clouddn.com/2017092752315cc2.png](http://oi6f4bkw5.bkt.clouddn.com/2017092752315cc2.png)
+-->
+![2017092752315cc2.png](./image/01.png)
 
 并保证
 
