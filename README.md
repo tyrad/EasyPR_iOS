@@ -2,14 +2,12 @@
 
 介绍如何将EasyPR集成到iOS平台/EasyPR在macOS上调试。
 
-
 EasyPR github项目地址:[https://github.com/liuruoze/EasyPR](https://github.com/liuruoze/EasyPR)
-
 
 
 ## 如何在mac上调试
 
-
+[mac上使用EasyPR进行车牌号识别](https://github.com/tyrad/EasyPR_iOS/blob/master/mac上使用EasyPR进行车牌号识别.md)
 
 ## 如何在iOS项目中使用(Xcode9)
 
@@ -32,17 +30,18 @@ EasyPR github项目地址:[https://github.com/liuruoze/EasyPR](https://github.co
 
 4). 尝试`#include "easypr.h"`发现报错
 
-![201709273657c.png](http://oi6f4bkw5.bkt.clouddn.com/201709273657c.png)
+![02.png](./image/02.png)
+
+<!--![201709273657c.png](http://oi6f4bkw5.bkt.clouddn.com/201709273657c.png)-->
 
 原因应该是名字和iOS`MacTypes.h`的冲突了
 处理方法:报错的全部加`cv::`前缀。
 
-
 5). 尝试运行,发现报错,原因是路径的问题
 
-![2017092798999123.png](http://oi6f4bkw5.bkt.clouddn.com/2017092798999123.png)
+![03.png](./image/03.png)
 
-解决参考了[https://github.com/zhoushiwei/EasyPR-iOS](https://github.com/zhoushiwei/EasyPR-iOS):
+解决方法参考了[https://github.com/zhoushiwei/EasyPR-iOS](https://github.com/zhoushiwei/EasyPR-iOS):
 
 
 根据`include/esaypr/config.h`里的变量名,创建全局变量,并修改源码。
@@ -170,7 +169,7 @@ using namespace easypr;
 @end
 ```
 
-
-![2017092797713result.png](http://oi6f4bkw5.bkt.clouddn.com/2017092797713result.png)
+<!--![2017092797713result.png](http://oi6f4bkw5.bkt.clouddn.com/2017092797713result.png)-->
+![04.png](./image/04.png)
 
 
