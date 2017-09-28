@@ -131,11 +131,14 @@ config.h文件的位置：`include/esaypr/config.h`
 ## 使用 command line tool
 
 1). 集成openCV[具体看这里](http://wiki.tyrad.cc/openCV/macOS上使用openCV.html)
+
 2). 将`libeasypr.a`、`libthirdparty.a`、`include`目录导入工程
 ![201709275187cxx.png](http://oi6f4bkw5.bkt.clouddn.com/201709275187cxx.png)
 
 3). `header search path`添加: `$(SRCROOT)/EasyPRDemo/include`
-4). `Edit Scheme`中,将`Work Directory`改成当前工程的路径
+
+4). `product` -> `scheme` ->`Edit Scheme`中,将`Work Directory`改成当前工程的路径(见最后一章图片)
+
 5). 将`EasyPR`原文件中的`models`目录放到当前当前工程目录下(目的是为了和`include/easypr/config.h`中的路径对应起来)
 
 ![2017092792418mm.png](http://oi6f4bkw5.bkt.clouddn.com/2017092792418mm.png)
